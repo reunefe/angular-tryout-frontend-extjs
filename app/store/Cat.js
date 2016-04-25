@@ -5,7 +5,7 @@ Ext.define('Angular.tryout.store.Cat', {
 	model: 'Angular.tryout.model.Cat',
 	proxy: {
 		type: 'rest',
-		url: 'http://localhost:4000/api/cats/'
+		url: 'http://localhost:4000/api/cats'
 	},
 	autoLoad: true
 });

@@ -1,9 +1,6 @@
-/**
- * This view is an example list of people.
- */
-Ext.define('Angular.tryout.view.main.List', {
+Ext.define('Angular.tryout.view.cats.CatList', {
     extend: 'Ext.grid.Panel',
-    xtype: 'mainlist',
+    xtype: 'catlist',
 
     requires: [
         'Angular.tryout.store.Cat'

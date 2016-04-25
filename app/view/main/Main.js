@@ -2,8 +2,6 @@
  * This class is the main view for the application. It is specified in app.js as the
  * "mainView" property. That setting automatically applies the "viewport"
  * plugin causing this view to become the body element (i.e., the viewport).
- *
- * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('Angular.tryout.view.main.Main', {
 	extend: 'Ext.tab.Panel',
@@ -14,13 +12,11 @@ Ext.define('Angular.tryout.view.main.Main', {
 		'Ext.window.MessageBox',
 
 		'Angular.tryout.view.main.MainController',
-		'Angular.tryout.view.main.MainModel',
-		'Angular.tryout.view.main.List'
+		'Angular.tryout.view.cats.CatList',
+		'Angular.tryout.view.owners.OwnerList'
 	],
 
 	controller: 'main',
-	viewModel: 'main',
-
 	ui: 'navigation',
 
 	titleRotation: 0,
@@ -40,19 +36,19 @@ Ext.define('Angular.tryout.view.main.Main', {
 
 	items: [{
 		title: 'Katten',
+		id: 'cats',
 		// The following grid shares a store with the classic version's grid as well!
 		items: [{
-			xtype: 'mainlist'
+			xtype: 'catlist'
 		}]
 	}, {
 		title: 'Eigenaars',
-		bind: {
-			html: '{loremIpsum}'
-		}
+		id: 'owners',
+		items: [{
+			xtype: 'ownerlist'
+		}]
 	}, {
 		title: 'Verblijvingen',
-		bind: {
-			html: '{loremIpsum}'
-		}
+		id: 'stays'
 	}]
 });
