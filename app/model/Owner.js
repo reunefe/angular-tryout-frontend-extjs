@@ -6,7 +6,9 @@ Ext.define('Angular.tryout.model.Adres', {
 
 	convert: function (value) {
 		if (value) {
-			return value.straat + " " + value.nummer + ", " + value.postcode + " " + value.gemeente;
+			var straatNr = concatStrings(value.straat, value.nummer, " ");
+			var gemeente = concatStrings(value.postcode, value.gemeente, " ");
+			return concatStrings(straatNr, gemeente, ", ");
 		}
 		return "Geen adres";
 	}
@@ -18,8 +20,7 @@ Ext.define('Angular.tryout.model.Owner', {
 	extend: 'Ext.data.Model',
 
 	fields: [
-		{name: '_id', type: 'string'},
-		{name: 'id', mapping: '_id'}, // Mapping for store actions: delete, get, put
+		{name: 'id', type: 'string', mapping: '_id'}, // Mapping for store actions: delete, get, put
 		{name: 'voornaam', type: 'string'},
 		{name: 'familienaam', type: 'string'},
 		{name: 'email', type: 'string'},
@@ -38,3 +39,20 @@ Ext.define('Angular.tryout.model.Owner', {
 		limitParam: ''
 	}
 });
+
+function concatStrings(first, second, spacer) {
+	"use strict";
+
+	if (first && second) {
+		return first + spacer + second;
+	}
+	if (first) {
+		return first;
+	}
+
+	if (second) {
+		return second;
+	}
+
+	return "";
+}

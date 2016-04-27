@@ -5,17 +5,11 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('Angular.tryout.view.main.MainController', {
-    extend: 'Ext.app.ViewController',
+	extend: 'Ext.app.ViewController',
 
-    alias: 'controller.main',
+	alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
-
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
-    }
+	tabChange: function (tabPanel, newCard) {
+		return this.redirectTo('/' + newCard.id);
+	}
 });

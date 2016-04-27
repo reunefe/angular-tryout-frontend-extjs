@@ -9,7 +9,6 @@ Ext.define('Angular.tryout.view.main.Main', {
 
 	requires: [
 		'Ext.plugin.Viewport',
-		'Ext.window.MessageBox',
 
 		'Angular.tryout.view.main.MainController',
 		'Angular.tryout.view.cats.CatList',
@@ -25,8 +24,7 @@ Ext.define('Angular.tryout.view.main.Main', {
 	tabBar: {
 		flex: 1,
 		layout: {
-			align: 'stretch',
-			overflowHandler: 'none'
+			align: 'stretch'
 		}
 	},
 
@@ -34,16 +32,21 @@ Ext.define('Angular.tryout.view.main.Main', {
 		bodyPadding: 20
 	},
 
+	listeners: {
+		tabchange: 'tabChange'
+	},
+
 	items: [{
 		title: 'Katten',
 		id: 'cats',
-		// The following grid shares a store with the classic version's grid as well!
+		layout: 'fit',
 		items: [{
 			xtype: 'catlist'
 		}]
 	}, {
 		title: 'Eigenaars',
 		id: 'owners',
+		layout: 'fit',
 		items: [{
 			xtype: 'ownerlist'
 		}]

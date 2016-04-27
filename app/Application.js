@@ -42,17 +42,14 @@ Ext.define('Angular.tryout.Application', {
 	},
 
 	onCats: function () {
-		console.log('cats');
 		this.getMainView().setActiveTab("cats");
 	},
 
 	onCat: function (catId) {
-		console.log('cats', catId);
 		this.getMainView().setActiveTab("cats");
 	},
 
 	onOwners: function () {
-		console.log('owners');
 		this.getMainView().setActiveTab("owners");
 	}
 });

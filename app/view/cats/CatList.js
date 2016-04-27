@@ -1,18 +1,31 @@
 Ext.define('Angular.tryout.view.cats.CatList', {
-    extend: 'Ext.grid.Panel',
-    xtype: 'catlist',
+	extend: 'Ext.view.View',
+	xtype: 'catlist',
 
-    requires: [
-        'Angular.tryout.store.Cat'
-    ],
+	requires: [
+		'Angular.tryout.store.Cat',
 
-    store: {
-        type: 'cat'
-    },
+		'Angular.tryout.view.cats.CatListController'
+	],
 
-    columns: [
-        { text: 'Name',  dataIndex: 'naam' },
-        { text: 'Geslacht', dataIndex: 'geslacht', flex: 1 },
-        { text: 'Gedrag', dataIndex: 'gedrag', flex: 1 }
-    ]
+	store: {
+		type: 'cat'
+	},
+
+	controller: 'catList',
+
+	listeners: {
+		afterrender: 'afterrender'
+	},
+
+	emptyText: 'No images to display',
+	itemSelector: 'div.thumb-wrap',
+	tpl: new Ext.XTemplate(
+		'<tpl for=".">',
+		'<div style="margin-bottom: 10px;" class="thumb-wrap">',
+		'<img src="{foto}" style="max-height: 300px;max-width: 300px; object-fit: contain;"/>',
+		'<br/><span>{naam}</span>',
+		'</div>',
+		'</tpl>'
+	)
 });

@@ -3,18 +3,31 @@ Ext.define('Angular.tryout.view.owners.OwnerList', {
 	xtype: 'ownerlist',
 
 	requires: [
-		'Angular.tryout.store.Owner'
+		'Ext.grid.column.Template',
+		'Ext.grid.column.Action',
+
+		'Angular.tryout.store.Owner',
+
+		'Angular.tryout.view.owners.OwnerListController'
 	],
+
+	controller: 'ownerList',
 
 	store: {
 		type: 'owner'
+	},
+
+	listeners: {
+		afterrender: 'afterrender'
 	},
 
 	columns: [
 		{
 			xtype: 'templatecolumn',
 			tpl: '<img src="{foto}" alt="{naam}" style = "max-height: 100px;max-width: 100px" />',
-			width: 120
+			width: 120,
+			menuDisabled: true,
+			sortable: false
 		},
 		{text: 'Voornaam', dataIndex: 'voornaam', flex: 1},
 		{text: 'Familienaam', dataIndex: 'familienaam', flex: 1},
@@ -25,6 +38,7 @@ Ext.define('Angular.tryout.view.owners.OwnerList', {
 		{
 			xtype: 'actioncolumn',
 			width: 50,
+			menuDisabled: true,
 			sortable: false,
 			items: [
 				// {
