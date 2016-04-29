@@ -33,12 +33,17 @@ Ext.define('Angular.tryout.model.Owner', {
 	proxy: {
 		type: 'rest',
 		url: 'http://localhost:4000/api/owners',
+		reader: {
+			type: 'json',
+			rootProperty: 'data'
+		},
 		// idParam: '_id', Doesn't work...
 		pageParam: '',
 		startParam: '',
 		limitParam: ''
 	}
-});
+})
+;
 
 function concatStrings(first, second, spacer) {
 	"use strict";

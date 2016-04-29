@@ -18,7 +18,7 @@ Ext.define('Angular.tryout.view.owners.OwnerList', {
 	},
 
 	listeners: {
-		afterrender: 'afterrender'
+		beforerender: 'beforerender'
 	},
 
 	columns: [
@@ -51,7 +51,7 @@ Ext.define('Angular.tryout.view.owners.OwnerList', {
 				{
 					icon: '/resources/images/delete.png',
 					iconCls: 'x-action-col-icon',
-					tooltip: 'Delete',
+					tooltip: 'Verwijder',
 					handler: function (grid, rowIndex, colIndex) {
 						var record = grid.getStore().getAt(rowIndex);
 						record.erase({

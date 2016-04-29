@@ -33,7 +33,8 @@ Ext.define('Angular.tryout.view.main.Main', {
 	},
 
 	listeners: {
-		tabchange: 'tabChange'
+		tabchange: 'tabChange',
+		afterrender: 'afterrender'
 	},
 
 	items: [{

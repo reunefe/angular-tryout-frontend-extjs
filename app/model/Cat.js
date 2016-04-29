@@ -16,6 +16,10 @@ Ext.define('Angular.tryout.model.Cat', {
 	],
 	proxy: {
 		type: 'rest',
-		url: 'http://localhost:4000/api/cats'
+		url: 'http://localhost:4000/api/cats',
+		reader: {
+			type: 'json',
+			rootProperty: 'data'
+		}
 	}
 });

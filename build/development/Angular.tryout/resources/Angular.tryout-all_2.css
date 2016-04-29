@@ -9575,34 +9575,37 @@
     border-color: #5fa2dd !important;
     border-width: 1px !important;
 }
-/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:60 */
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:61 */
 .x-title-icon-navigation {
     font-family: FontAwesome;
     color: #fff;
     font-size: 24px;
     line-height: 24px;
 }
-/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:67 */
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:68 */
 .x-tab-icon-el-navigation {
     font-family: FontAwesome;
     color: #acacac;
 }
-/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:71 */
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:72 */
 .x-tab-over .x-tab-icon-el-navigation {
     color: #c4c4c4;
 }
-/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:75 */
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:76 */
 .x-tab-active .x-tab-icon-el-navigation {
     color: #fff;
 }
-/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:80 */
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:81 */
 .x-panel-header-title-navigation > .x-title-text-navigation:after {
     top: 30px;
     right: -24px;
 }
-/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:85 */
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:86 */
 .x-action-col-icon {
     height: 16px;
     width: 16px;
-    margin-right: 8px;
+}
+/* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/sass/src/view/main/Main.scss:91 */
+.x-grid-item-focused .x-grid-cell-inner:before {
+    border: none;
 }

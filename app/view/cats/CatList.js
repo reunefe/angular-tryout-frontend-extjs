@@ -15,14 +15,14 @@ Ext.define('Angular.tryout.view.cats.CatList', {
 	controller: 'catList',
 
 	listeners: {
-		afterrender: 'afterrender'
+		beforerender: 'beforerender'
 	},
 
 	emptyText: 'No images to display',
 	itemSelector: 'div.thumb-wrap',
 	tpl: new Ext.XTemplate(
 		'<tpl for=".">',
-		'<div style="margin-bottom: 10px;" class="thumb-wrap">',
+		'<div style="margin: 10px;display: inline-block;" class="thumb-wrap">',
 		'<img src="{foto}" style="max-height: 300px;max-width: 300px; object-fit: contain;"/>',
 		'<br/><span>{naam}</span>',
 		'</div>',

@@ -11,6 +11,8 @@ $include-angular-tryout-view-cats-catlist: dynamic(true);;
 $include-angular-tryout-view-cats-catlistcontroller: dynamic(true);;
 $include-angular-tryout-view-main-main: dynamic(true);;
 $include-angular-tryout-view-main-maincontroller: dynamic(true);;
+$include-angular-tryout-view-owners-ownerform: dynamic(true);;
+$include-angular-tryout-view-owners-ownerformcontroller: dynamic(true);;
 $include-angular-tryout-view-owners-ownerlist: dynamic(true);;
 $include-angular-tryout-view-owners-ownerlistcontroller: dynamic(true);;
 $include-ext-abstractcomponent: dynamic(true);;

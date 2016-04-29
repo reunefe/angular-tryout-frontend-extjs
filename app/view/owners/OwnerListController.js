@@ -3,7 +3,7 @@ Ext.define('Angular.tryout.view.owners.OwnerListController', {
 
 	alias: 'controller.ownerList',
 
-	afterrender: function (item) {
+	beforerender: function (item) {
 		item.getStore().load();
 	}
 });

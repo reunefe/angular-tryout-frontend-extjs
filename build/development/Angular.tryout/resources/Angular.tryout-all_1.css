@@ -3100,7 +3100,7 @@ body > .x-mask {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-default-small {
-    border-color: #5897ce;
+    border-color: transparent;
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-default-small {
@@ -3278,7 +3278,6 @@ body > .x-mask {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-small {
-    border-color: #518bbd;
     background-image: none;
     background-color: #5795cb;
 }
@@ -3291,7 +3290,6 @@ body > .x-mask {
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-small,
 .x-btn.x-btn-pressed.x-btn-default-small {
-    border-color: #42719a;
     background-image: none;
     background-color: #477aa6;
 }
@@ -3688,7 +3686,7 @@ body > .x-mask {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-default-medium {
-    border-color: #5897ce;
+    border-color: transparent;
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-default-medium {
@@ -3866,7 +3864,6 @@ body > .x-mask {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-medium {
-    border-color: #518bbd;
     background-image: none;
     background-color: #5795cb;
 }
@@ -3879,7 +3876,6 @@ body > .x-mask {
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-medium,
 .x-btn.x-btn-pressed.x-btn-default-medium {
-    border-color: #42719a;
     background-image: none;
     background-color: #477aa6;
 }
@@ -4276,7 +4272,7 @@ body > .x-mask {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-default-large {
-    border-color: #5897ce;
+    border-color: transparent;
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-default-large {
@@ -4454,7 +4450,6 @@ body > .x-mask {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-large {
-    border-color: #518bbd;
     background-image: none;
     background-color: #5795cb;
 }
@@ -4467,7 +4462,6 @@ body > .x-mask {
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-large,
 .x-btn.x-btn-pressed.x-btn-default-large {
-    border-color: #42719a;
     background-image: none;
     background-color: #477aa6;
 }
@@ -13195,7 +13189,7 @@ a.x-color-picker-item:hover {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-grid-cell-small {
-    border-color: #5897ce;
+    border-color: transparent;
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-grid-cell-small {
@@ -13366,14 +13360,12 @@ a.x-color-picker-item:hover {
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-grid-cell-small {
-    border-color: #518bbd;
     background-image: none;
     background-color: #5795cb;
 }
 /* D:/reunefe/repos/angular-tryout/angular-tryout-frontend-extjs/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-grid-cell-small,
 .x-btn.x-btn-pressed.x-btn-grid-cell-small {
-    border-color: #42719a;
     background-image: none;
     background-color: #477aa6;
 }

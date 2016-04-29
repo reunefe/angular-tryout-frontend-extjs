@@ -1,6 +1,7 @@
 /**
  * Generates a set of style rules for the "navigation" tab UI.
  */
+
 @include extjs-tab-panel-ui(
     $ui: 'navigation',
     $ui-tab-background-color: transparent,
@@ -85,5 +86,10 @@
 .x-action-col-icon {
     height: 16px;
     width: 16px;
-    margin-right: 8px;
 }
+
+.x-grid-item-focused .x-grid-cell-inner:before {
+    border: none;
+}
+
+$button-default-border-color: transparent;

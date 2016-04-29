@@ -3,7 +3,7 @@ Ext.define('Angular.tryout.view.cats.CatListController', {
 
 	alias: 'controller.catList',
 
-	afterrender: function (item) {
-		item.getStore().load();
+	beforerender: function (view) {
+		view.getStore().load();
 	}
 });
